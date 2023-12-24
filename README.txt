@@ -114,5 +114,5 @@ Implementar un solución que contablice automáticamente el número de interacci
 
 - Contacto
 
-Para preguntas y soporte, contacta con seneca.dpj@gmail.com.
+Para preguntas y soporte, contacta con: seneca.dpj@gmail.com.
 
