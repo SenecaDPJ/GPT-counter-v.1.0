@@ -1,12 +1,12 @@
 ﻿Public Class GPTcounter1
 
-    ' ... VARIABLES ...
+    ' ... ... ... ... VARIABLES ... ... ... ...
 
-    ' Variables para el contador y el archivo
+    ' Variables para el CONTADOR y el archivo
     Private count As Integer = 0
     Private filePath As String = "contador.txt"
 
-    ' Variables para el cronómetro
+    ' Variables para el CRONÓMETRO
     Private stopwatch As New Stopwatch()
     Private MaxTime As TimeSpan = TimeSpan.FromHours(3)
     Private mensajeMostrado As Boolean = False
@@ -14,6 +14,8 @@
     ' Variables para el sonido
     Private soundEnabled As Boolean = True
 
+    ' Definir SoundPlayer a nivel de clase
+    Private soundPlayer As New System.Media.SoundPlayer()
 
     ' Variables para el la ventana
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -21,17 +23,12 @@
 
     End Sub
 
-    ' Definir SoundPlayer a nivel de clase
-    Private soundPlayer As New System.Media.SoundPlayer()
-
-
-    ' ... MÉTODOS ...
+    ' ... ... ... ... MÉTODOS ... ... ... ...
 
     ' Método para actualizar el CONTADOR con color de digito individual
-
     Private Sub UpdateCount()
 
-        ' Descomponer el contador en dígitos individuales
+        ' Descomponer el CONTADOR en dígitos individuales
         Dim digits = count.ToString("D3").ToCharArray()
 
         ' Actualizar cada etiqueta con el dígito correspondiente
@@ -40,7 +37,7 @@
         UpdateDigitLabel(LabelDigit2, digits(1), count >= 10)
         UpdateDigitLabel(LabelDigit3, digits(2), count >= 1)
 
-        ' Verificar si el contador ha llegado a 30
+        ' Verificar si el CONTADOR ha llegado a 30
         If count = 30 Then
             ' Crear y mostrar el formulario de diálogo
             If count = 30 Then
@@ -48,7 +45,7 @@
             End If
         End If
 
-        ' Verificar si el contador ha llegado a 40
+        ' Verificar si el CONTADOR ha llegado a 40
         If count = 40 Then
             ' Crear y mostrar el formulario de diálogo
             Dim dialog As New CustomMessageBox()
@@ -57,12 +54,13 @@
 
     End Sub
 
-    ' ... PERSONALIZACIÓN ...
+    ' ... ... ... ... PERSONALIZACIÓN ... ... ... ...
 
+    ' ... CONTADOR ...
     Private Sub UpdateDigitLabel(label As Label, digit As Char, specialColor As Boolean)
         label.Text = digit.ToString()
 
-        ' Establecer los colores
+        ' Establecer los colores de los dígitos del CONTADOR
         If specialColor Then
             If count >= 40 Then
                 ' Fondo rojo y texto blanco para todos los dígitos
@@ -89,66 +87,73 @@
 
     End Sub
 
-
     ' ... ... ... ... LOAD ... ... ... ...
 
-    ' Evento Load del formulario
+    ' EVENTOS del RELOJ
+    ' ... Timer1_Tick ...
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Iniciar el RELOJ
         Timer1.Start()
-        Stopwatch.Start()
-
-    End Sub
-
-    Private Sub MainForm1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Iniciar el cronómetro
         stopwatch.Start()
 
+    End Sub
+
+    ' EVENTOS del CRONÓMETRO
+    ' ... Timer2_Tick ...
+    Private Sub MainForm1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Iniciar el CRONÓMETRO
+        stopwatch.Start()
         ' Iniciar el temporizador para actualizar la interfaz de usuario
         Timer2.Start()
+
     End Sub
 
-
+    ' EVENTOS del SONIDO
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Cargar el sonido desde los recursos
+        ' Reproducir sonido desde los recursos al activar el sonido
         soundPlayer.Stream = My.Resources.beepi
+
     End Sub
 
-
-    ' ... ... ... ... EVENTOS ... ... ... ...
-
-    ' Evento Tick del RELOJ
+    ' EVENTOS del RELOJ
+    ' ... Timer1_Tick ...
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        ' Actualizar RELOJ
+        ' Actualizar RELOJ en la interfaz de usuario
         lblCurrentTime.Text = DateTime.Now.ToString("HH:mm:ss")
 
     End Sub
 
-    ' Evento Tick del Timer para el cronómetro
+    ' EVENTOS del CRONÓMETRO
+    ' ... Timer2_Tick ...
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        ' Actualizar el cronómetro en la interfaz de usuario
+        ' Actualizar CRONÓMETRO en la interfaz de usuario
         If stopwatch.Elapsed <= MaxTime Then
             lblTimer.Text = stopwatch.Elapsed.ToString("hh\:mm\:ss")
         Else
             If Not mensajeMostrado Then
-                ' Detener el cronómetro y el Timer
+                ' Detener el CRONÓMETRO y el Timer
                 stopwatch.Stop()
                 Timer2.Stop()
 
-                lblTimer.Text = "03:00:00" ' Ajustar según el formato que prefieras
+                lblTimer.Text = "03:00:00"
+                ' Ajustar según el formato que prefieras
 
-                ' Mostrar el mensaje
-                MessageBox.Show("Sesión de 3 horas completada, restablece el cronómetro", "Tiempo límite de Sesión alcanzado")
+                ' Mostrar el mensaje Sesión completada
+                MessageBox.Show("Sesión de 3 horas completada, restablece el Cronómetro", "Tiempo límite de Sesión alcanzado")
                 mensajeMostrado = True
             End If
         End If
-    End Sub
 
+    End Sub
 
     ' ... ... ... ... BOTONES ... ... ... ...
 
-    ' Button 1 Aumentar CONTADOR
+    ' ... CONTROLES ...
+
+    ' ... Button 1 ...
+    ' Aumentar CONTADOR
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        ' Sumar uno contador
+        ' Sumar uno al CONTADOR
         count += 1
         UpdateCount()
 
@@ -160,7 +165,8 @@
 
     End Sub
 
-    ' Button 2 disminuir CONTADOR
+    ' ... Button 2 ...
+    ' Disminuir CONTADOR
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         ' Hacer sonar (sonido BOCINA)
         If soundEnabled Then
@@ -169,11 +175,11 @@
         End If
 
         ' Mostrar un cuadro de diálogo de mensaje para confirmar la acción
-        Dim result As DialogResult = MessageBox.Show("Vas a restar 1 Interacción", "Confirma restar", MessageBoxButtons.YesNo)
+        Dim result As DialogResult = MessageBox.Show("¿Quieres restar una Interacción?", "Confirma restar", MessageBoxButtons.YesNo)
 
         ' Verificar si el usuario presionó el botón 'Sí'
         If result = DialogResult.Yes Then
-            ' Restar uno al contador
+            ' Restar uno al CONTADOR
             If count > 0 Then
                 count -= 1
 
@@ -183,8 +189,8 @@
 
     End Sub
 
-    ' Button 3 Restablecer CONTADOR
-
+    ' ... Button 3 ...
+    ' Restablecer CONTADOR
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         ' Hacer sonar (sonido BOCINA INCORRECTO)
         If soundEnabled Then
@@ -193,18 +199,19 @@
         End If
 
         ' Mostrar un cuadro de diálogo de mensaje para confirmar la acción
-        Dim result As DialogResult = MessageBox.Show("¿Estás seguro de que quieres restablecer el Contador de Interacciones?", "Confirmar Restablecimiento de Contador", MessageBoxButtons.YesNo)
+        Dim result As DialogResult = MessageBox.Show("¿Quieres restablecer el Contador de Interacciones?", "Confirmar Restablecimiento de Contador", MessageBoxButtons.YesNo)
 
         ' Verificar si el usuario presionó el botón 'Sí'
         If result = DialogResult.Yes Then
-            ' Restablecer el contador y actualizar la interfaz
+            ' Restablecer el CONTADOR y actualizar la interfaz
             count = 0
             UpdateCount()
         End If
 
     End Sub
 
-    ' Button 4 Restablecer CRONÓMETRO
+    ' ... Button 4 ...
+    ' Restablecer CRONÓMETRO
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         ' Hacer sonar (sonido MARCADOR)
         If soundEnabled Then
@@ -213,7 +220,7 @@
         End If
 
         ' Mostrar un cuadro de diálogo de mensaje para confirmar la acción
-        Dim result As DialogResult = MessageBox.Show("Vas a restablecer el crónometro de la Sesión", "Confirmar Restablecimiento de Sesión", MessageBoxButtons.YesNo)
+        Dim result As DialogResult = MessageBox.Show("¿Quieres restablecer el Crónometro de la Sesión?", "Confirmar Restablecimiento de Sesión", MessageBoxButtons.YesNo)
 
         ' Verificar si el usuario presionó el botón 'Sí'
         If result = DialogResult.Yes Then
@@ -230,16 +237,37 @@
 
     End Sub
 
-    ' Button 5 Redes Sociales
+    ' ... Button 7 ...
+    ' SONIDO
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        ' Alternar el estado del sonido (ACTIVADO/SILENCIO)
+        soundEnabled = Not soundEnabled
+
+        If soundEnabled Then
+            Button7.Image = My.Resources.ON_vol1
+            soundPlayer.Play() ' Reproduce sonido al ACTIVAR
+        Else
+            Button7.Image = My.Resources.OFF_vol1
+            soundPlayer.Stop() ' sonido DESACTIVAR
+        End If
+
+    End Sub
+
+    ' ... ... ... ... BOTONES ... ... ... ...
+
+    ' ... URL ...
+
+    ' ... Button 5 ...
+    ' My Red Social (X)
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         ' Hacer sonar (sonido DISPARO)
         If soundEnabled Then
-            Dim sound As New System.Media.SoundPlayer(My.Resources.bang)
+            Dim sound As New System.Media.SoundPlayer(My.Resources.disparos)
             sound.Play()
         End If
 
         ' Mostrar un cuadro de diálogo de mensaje para confirmar la acción
-        Dim result As DialogResult = MessageBox.Show("Vas a abrir mi Red Social", "Confirmar Restablecimiento", MessageBoxButtons.OK)
+        Dim result As DialogResult = MessageBox.Show("Vas a abrir mi Red Social", "Enlaces del autor", MessageBoxButtons.OK)
         ' Verificar si el usuario presionó el botón 'Sí'
         If result = DialogResult.OK Then
         End If
@@ -247,7 +275,8 @@
 
     End Sub
 
-    ' Button 6 My WEB
+    ' ... Button 6 ...
+    ' My WORDPRESS WEB
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         ' Hacer sonar (sonido DISPARO)
         If soundEnabled Then
@@ -256,7 +285,7 @@
         End If
 
         ' Mostrar un cuadro de diálogo de mensaje para confirmar la acción
-        Dim result As DialogResult = MessageBox.Show("Vas a abrir mi Wordpress", "Confirmar Restablecimiento", MessageBoxButtons.OK)
+        Dim result As DialogResult = MessageBox.Show("Vas a abrir mi Wordpress", "Enlaces del autor", MessageBoxButtons.OK)
         ' Verificar si el usuario presionó el botón 'Sí'
         If result = DialogResult.OK Then
         End If
@@ -264,19 +293,21 @@
 
     End Sub
 
-
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        ' Alternar el estado del sonido
-        soundEnabled = Not soundEnabled
-
+    ' ... Button 8 ...
+    ' My GitHUB WEB
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        ' Hacer sonar (sonido MOTOR)
         If soundEnabled Then
-            Button7.Image = My.Resources.ON_vol1
-            soundPlayer.Play() ' Reproducir el sonido en bucle
-        Else
-            Button7.Image = My.Resources.OFF_vol1
-            soundPlayer.Stop() ' Detener la reproducción del sonido
+            Dim sound As New System.Media.SoundPlayer(My.Resources.motor)
+            sound.Play()
         End If
 
+        ' Mostrar un cuadro de diálogo de mensaje para confirmar la acción
+        Dim result As DialogResult = MessageBox.Show("Vas a abrir mi GitHUB", "Enlaces del autor", MessageBoxButtons.OK)
+        ' Verificar si el usuario presionó el botón 'Sí'
+        If result = DialogResult.OK Then
+        End If
+        Process.Start("https://github.com/SenecaDPJ")
     End Sub
 
 End Class

@@ -100,6 +100,15 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
         '''</summary>
+        Friend ReadOnly Property disparos() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("disparos", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+        '''</summary>
         Friend ReadOnly Property dun_dun_dun() As System.IO.UnmanagedMemoryStream
             Get
                 Return ResourceManager.GetStream("dun_dun_dun", resourceCulture)
@@ -112,6 +121,25 @@ Namespace My.Resources
         Friend ReadOnly Property incorrecto_bocina_() As System.IO.UnmanagedMemoryStream
             Get
                 Return ResourceManager.GetStream("incorrecto_bocina_", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        '''</summary>
+        Friend ReadOnly Property LOGO_GPTcounter() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("LOGO_GPTcounter", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property motor() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("motor", resourceCulture)
             End Get
         End Property
         

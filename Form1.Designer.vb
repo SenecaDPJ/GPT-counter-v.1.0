@@ -45,6 +45,7 @@ Partial Class GPTcounter1
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -290,6 +291,20 @@ Partial Class GPTcounter1
         Me.Label3.TabIndex = 50
         Me.Label3.Text = "Contador"
         '
+        'Button8
+        '
+        Me.Button8.AutoSize = True
+        Me.Button8.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button8.BackgroundImage = CType(resources.GetObject("Button8.BackgroundImage"), System.Drawing.Image)
+        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button8.Location = New System.Drawing.Point(254, 7)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(26, 26)
+        Me.Button8.TabIndex = 51
+        Me.Button8.UseVisualStyleBackColor = False
+        '
         'Button7
         '
         Me.Button7.BackgroundImage = Global.GPT_counter_v._1._0.My.Resources.Resources.ON_vol
@@ -332,6 +347,7 @@ Partial Class GPTcounter1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(296, 391)
+        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label4)
@@ -386,4 +402,5 @@ Partial Class GPTcounter1
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents Button8 As Button
 End Class
