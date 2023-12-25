@@ -137,8 +137,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="license.txt" />
     <Content Include="LOGO-GPTcounter.ico" />
     <Content Include="OJO_m.ico" />
+    <None Include="README.md" />
     <None Include="Resources\icon\LOGO-GPTcounter.ico" />
     <None Include="Resources\sounds\disparos.wav" />
     <None Include="Resources\sounds\motor.wav" />

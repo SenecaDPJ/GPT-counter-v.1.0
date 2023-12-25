@@ -62,15 +62,15 @@ Descarga el archivo ejecutable disponible “GPTcounter 1.0.exe” y ejecuta el 
 
 - Usos de la aplicación
 
-Haz clic en el botón "más" para aumentar el contador.
+Haz clic en el botón "más" para aumentar el Contador.
 
-Haz clic en el botón "menos" para disminuir el contador.
+Haz clic en el botón "menos" para disminuir el Contador.
 
-Haz clic en el botón "RESET interacciones" para restablecer el contador.
+Haz clic en el botón "RESTABLECER interacciones" para restaurar el contador.
 
-Haz clic en el botón "RESET sesión" para restablecer el cronómetro de sesión del contador.
+Haz clic en el botón "RESTABLECER sesión" para restaurar el cronómetro de sesión del contador.
 
-Usa el botón con icono de altavoz para activar/desactivar los sonidos.
+Haz clic en el botón con icono de altavoz para activar y desactivar los sonidos de la aplicación.
 
 Haz clic en los botones con imagen para visitar enlaces URL del autor.
 
@@ -95,17 +95,17 @@ Actualmente no dominio GitHUB lo suficiente para manejar proyectos grupales, si 
 
 - Licencia 
 
-Licencia tipo MIT, revisa el archivo LICENSE.md. 
+Licencia tipo MIT, revisa el archivo license.txt. 
 
-
-- Desarrollo
-
-Aplicación desarrollada con Visual Code 2022 Community. 
- 
 Las imágenes mostradas han sido creadas por el autor y/o descargadas legalmente de internet.
 
 Se han utilizado los sonidos descargados en: http://www.sonidosmp3gratis.com
 
+
+- Desarrollo
+
+Visual Code 2022 Community como aplicación de desarrollo. VB.NET con .NET Framework 8. 
+ 
 
 - Futura herramienta
 

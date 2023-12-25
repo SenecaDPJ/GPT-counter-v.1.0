@@ -125,6 +125,26 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Busca una cadena traducida similar a MIT License
+        '''
+        '''Copyright (c) 2023 David De Prado (Seneca DPJ)
+        '''
+        '''Permission is hereby granted, free of charge, to any person obtaining a copy
+        '''of this software and associated documentation files (the &quot;Software&quot;), to deal
+        '''in the Software without restriction, including without limitation the rights
+        '''to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        '''copies of the Software, and to permit persons to whom the Software is
+        '''furnished to do so, subject to the following conditions:
+        '''
+        '''The ab [resto de la cadena truncado]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property license() As String
+            Get
+                Return ResourceManager.GetString("license", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
         '''</summary>
         Friend ReadOnly Property LOGO_GPTcounter() As System.Drawing.Icon
@@ -190,6 +210,16 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("ON_vol1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property README() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("README", resourceCulture)
+                Return CType(obj,Byte())
             End Get
         End Property
         
