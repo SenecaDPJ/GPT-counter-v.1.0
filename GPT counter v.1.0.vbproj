@@ -162,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="My\" />
+    <Folder Include="screenshots\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
