@@ -34,7 +34,10 @@ Sistemas operativos Windows.
 
 - INSTALACIÓN
 
-Descarga el archivo ejecutable disponible “GPTcounter 1.0.exe” y ejecuta el archivo en tu sistema Windows.
+Instalación no necesaria, descarga y ejecuta el archivo GPT.counter.1.0.exe disponible en RELEASES.
+
+RELEASES 😎![GPT counter 1.0](releases/)
+
 
 
 - FUNCIONALIDADES
@@ -119,6 +122,7 @@ _ Mensajes informativos y alertas visuales
 ![Mensajes informativos y alertas visuales](screenshots/3-Visual-Mensajes-Personalizacion.png)
 
 _ Consulta y mensajes sobre ChatGPT
+
 Enlace a consulta ChatGPT sobre el número de interacciones permitidas: https://chat.openai.com/share/e035d8c3-18ca-48dd-9aba-f6cece104c5b
 
 _ Actualmente, ChatGPT ya muestra el número de interacciones permitidas en su menú principal, pero ChatGPT no las contabiliza.
