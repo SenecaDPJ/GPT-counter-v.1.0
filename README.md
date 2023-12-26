@@ -9,7 +9,7 @@ GPT counter
 
 GPT counter es una aplicación de escritorio para Windows diseñada para contabilizar manualmente las interacciones del usuario con ChatGPT.
 
-Ofrece funcionalidades optimizadas para mostrar un Contador de interacciones con alertas visuales y útiles ventanas de mensajes interactivos, dispone de personalización de audio, cronómetro de Sesión con restablecimiento y reloj.
+Ofrece funcionalidades optimizadas para mostrar un Contador de interacciones con alertas visuales y útiles ventanas de mensajes interactivos, dispone de personalización de audio, cronómetro de sesión con restablecimiento y reloj.
 
 
 - CARACTERÍSTICAS PRINCIPALES
@@ -51,7 +51,7 @@ Ventana estilo "Dark MODE" con auto posicionamiento.
 
 - PERSONALIZACIÓN Y AJUSTES VISUALES
 
-Los dígitos del contador cambian de color para destacar su acercamiento al límite de interacciones permitidas durante la Sesión.
+Los dígitos del contador cambian de color para destacar su acercamiento al límite de interacciones permitidas durante la sesión.
 
 Interfaz de usuario sencilla con alta visibilidad y contraste.
 
