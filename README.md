@@ -34,10 +34,7 @@ Sistemas operativos Windows.
 
 - INSTALACIÓN
 
-Instalación no necesaria, descarga y ejecuta el archivo GPT.counter.1.0.exe disponible en RELEASES.
-
-RELEASES 😎![GPT counter 1.0](releases/)
-
+Instalación no necesaria, descarga y ejecuta el archivo .EXE disponible en RELEASES "GPT.counter.1.0.exe".
 
 
 - FUNCIONALIDADES
