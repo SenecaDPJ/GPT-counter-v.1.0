@@ -118,14 +118,22 @@ _ Mensajes informativos y alertas visuales
 
 ![Mensajes informativos y alertas visuales](screenshots/3-Visual-Mensajes-Personalizacion.png)
 
-_ Consulta y mensajes sobre ChatGPT
+_ Consultas y mensajes sobre ChatGPT
 
-Enlace a consulta ChatGPT sobre el número de interacciones permitidas: https://chat.openai.com/share/e035d8c3-18ca-48dd-9aba-f6cece104c5b
+Enlace a consulta ChatGPT sobre el número de interacciones permitidas 
+
+https://chat.openai.com/share/e035d8c3-18ca-48dd-9aba-f6cece104c5b
 
 _ Actualmente, ChatGPT ya muestra el número de interacciones permitidas en su menú principal, pero ChatGPT no las contabiliza.
 
 ![Mensajes consultas ChatGPT](screenshots/4-Detalles1-GPT.png)
 
-_ Aunque indica que puede llevar un conteo, no lo hace bien o directamente no lo hace.
+_ Aunque indica que puede llevar un conteo de las interacciones, no lo hace bien o directamente no lo hace.
 
 ![Mensajes consultas ChatGPT](screenshots/5-Detalles2-GPT.png)
+
+ _ ChatGPT me regaló un promt utilizable como instrucción para que él mismo lleve la contabilización de las interacciones realizadas, te invito a probarlo, como indico, no realiza correctamente el conteo de interacciones.
+ 
+ https://chat.openai.com/share/7ca89454-67ee-4721-b21b-cfa205af04c0
+
+ ![Mensajes consultas ChatGPT](screenshots/6-Detalles3-GPT.png)
