@@ -76,7 +76,7 @@ Licencia tipo MIT, revisa el archivo license.txt.
 
 Las imágenes mostradas han sido creadas y/o capturadas/descargadas por el autor legalmente de internet.
 
-Se han utilizado los sonidos descargados en: http://www.sonidosmp3gratis.com
+Los sonidos utilizados se han descargados de: [sonidosmp3gratis](http://www.sonidosmp3gratis.com)
 
 
 - DESARROLLO
