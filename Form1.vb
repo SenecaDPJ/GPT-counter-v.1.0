@@ -1,6 +1,7 @@
 ﻿Public Class GPTcounter1
 
-    ' MIT License Copyright (c) 2023 David De Prado (Seneca DPJ)
+    ' MIT License
+    ' Copyright (c) 2023 David De Prado (Seneca DPJ)
 
     ' ... ... ... ... VARIABLES ... ... ... ...
 
