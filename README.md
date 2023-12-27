@@ -16,7 +16,7 @@ Ofrece funcionalidades optimizadas para mostrar un Contador de interacciones con
 
 CONTADOR MANUAL DE INTERACCIONES
 
-Aumenta, disminuye o restablece el contador de interacciones y el cronometro de sesión, los botones que resten o restablezcan el contador te avisarán.
+Aumenta, disminuye o restablece el contador de interacciones y el cronometro de sesión, los botones que resten o restablezcan te pedirán confirma o cancelar la acción.
 
 CRONÓMETRO DE SESIÓN CON RESTABLECIMIENTO
 
@@ -34,7 +34,7 @@ Sistemas operativos Windows.
 
 - INSTALACIÓN
 
-Instalación no necesaria, descarga desde [RELEASES](https://github.com/SenecaDPJ/GPT-counter-v.1.0/releases) y ejecuta el archivo "GPT.counter.1.0.exe" en tu ordenador. 
+Instalación no necesaria, descarga "GPT.counter.1.0.exe" desde [RELEASES](https://github.com/SenecaDPJ/GPT-counter-v.1.0/releases) y ejecuta el archivo en tu ordenador. 
 
 
 - FUNCIONALIDADES
