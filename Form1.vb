@@ -2,7 +2,7 @@
 
     ' MIT License Copyright (c) 2023 David De Prado (Seneca DPJ)
 
-        ' ... ... ... ... VARIABLES ... ... ... ...
+    ' ... ... ... ... VARIABLES ... ... ... ...
 
     ' Variables para el CONTADOR y el archivo
     Private count As Integer = 0
