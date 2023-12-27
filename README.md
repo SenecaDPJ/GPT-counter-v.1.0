@@ -9,7 +9,7 @@ GPT counter
 
 GPT counter es una aplicación de escritorio para Windows diseñada para contabilizar manualmente las interacciones del usuario con ChatGPT.
 
-Ofrece funcionalidades optimizadas para mostrar un Contador de interacciones con alertas visuales y útiles ventanas de mensajes interactivos, dispone de personalización de audio, cronómetro de sesión con restablecimiento y reloj.
+Ofrece funcionalidades optimizadas para mostrar un Contador de interacciones con alertas visuales y útiles ventanas con mensajes interactivos, dispone de personalización de audio, cronómetro de sesión con restablecimiento y reloj.
 
 
 - CARACTERÍSTICAS PRINCIPALES
@@ -24,7 +24,7 @@ GPT counter muestra un cronometro ajustado a las interacciones permitidas en la 
 
 RELOJ HORA LOCAL
 
-GPT counter muestra un reloj de la hora de tu ordenador.
+GPT counter tiene un reloj que muestra la hora indicada en tu ordenador.
 
 
 - COMPATIBILIDAD
@@ -34,12 +34,12 @@ Sistemas operativos Windows.
 
 - INSTALACIÓN
 
-Instalación no necesaria, descarga y ejecuta el archivo .EXE disponible en RELEASES "GPT.counter.1.0.exe".
+Instalación no necesaria, descarga y ejecuta el archivo "GPT.counter.1.0.exe" desde [RELEASES](https://github.com/SenecaDPJ/GPT-counter-v.1.0/releases).
 
 
 - FUNCIONALIDADES
 
-Útiles mensajes en las ventanas de alertas y avisos informativos estratégicos.
+Útiles mensajes en las ventanas de alerta y avisos informativos estratégicos.
 
 Divertidos sonidos interactivos con cancelación de audio.
 
@@ -50,7 +50,7 @@ Ventana estilo "Dark MODE" con auto posicionamiento.
 
 Los dígitos del contador cambian de color para destacar su acercamiento al límite de interacciones permitidas durante la sesión.
 
-Interfaz de usuario sencilla con alta visibilidad y contraste.
+Una interfaz de usuario sencilla con alta visibilidad y contraste.
 
 Muy pronto... botón estilo "Light MODE".
 
@@ -61,13 +61,13 @@ _ Botón "MÁS" para aumentar el Contador.
 
 _ Botón "MENOS" para disminuir el Contador.
 
-_ Botón "RESTABLECER interacciones" para restaurar el contador.
+_ Botón "RESTABLECER interacciones" para restaurar el Contador.
 
-_ Botón "RESTABLECER sesión" para restaurar el cronómetro de sesión del contador.
+_ Botón "RESTABLECER sesión" para restaurar el Cronómetro de la sesión.
 
 _ Botón con icono de altavoz para activar y desactivar los sonidos de la aplicación.
 
-_ Botones con imagen para visitar enlaces URL del autor.
+_ Botones con imagen para visitar enlaces web del autor.
 
 
 - LICENCIA 
@@ -81,7 +81,8 @@ Se han utilizado los sonidos descargados en: http://www.sonidosmp3gratis.com
 
 - DESARROLLO
 
-Visual Code 2022 Community como aplicación de desarrollo. VB.NET con .NET Framework 8. 
+Visual Code 2022 Community como aplicación de desarrollo.
+100 % código VB.NET (.NET Framework 8). 
  
 
 - FUTURO DESARROLLO PARA HERRAMIENTA AUTOMATIZADA
