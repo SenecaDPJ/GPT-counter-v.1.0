@@ -34,7 +34,7 @@ Sistemas operativos Windows.
 
 - INSTALACIÓN
 
-Instalación no necesaria, descarga y ejecuta el archivo "GPT.counter.1.0.exe" desde [RELEASES](https://github.com/SenecaDPJ/GPT-counter-v.1.0/releases).
+Instalación no necesaria, descarga desde [RELEASES](https://github.com/SenecaDPJ/GPT-counter-v.1.0/releases) y ejecuta el archivo "GPT.counter.1.0.exe" en tu ordenador. 
 
 
 - FUNCIONALIDADES
